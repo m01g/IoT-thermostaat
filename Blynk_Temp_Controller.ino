@@ -21,7 +21,7 @@ DallasTemperature sensor(&ourWire);
 // WiFi en Blynk instellingen
 char auth[] = "XBKvdONtp-OBExR7sEXPq2y8Xvrvkjvp";
 char ssid[] = "***REMOVED***";
-char pass[] = "hetwoord";
+char pass[] = "hetwoord:-)";
 
 BlynkTimer timer;
 
