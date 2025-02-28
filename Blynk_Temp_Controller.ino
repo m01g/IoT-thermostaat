@@ -47,22 +47,19 @@ void sendSensor() {
   Blynk.virtualWrite(V0, tempC);
 
   if (tempC <= thresholdTemp) {
-    // Fysieke LED op rood zetten
-    analogWrite(RED_PIN, 255);
-    analogWrite(GREEN_PIN, 0);
-    analogWrite(BLUE_PIN, 0);
-
-    // Kleur naar Blynk sturen:
-    Blynk.setProperty(V2, "color", "#FF0000");
-    Blynk.virtualWrite(V2, 255);
-  } else {
-    // Fysieke LED op groen zetten
     analogWrite(RED_PIN, 0);
     analogWrite(GREEN_PIN, 255);
     analogWrite(BLUE_PIN, 0);
 
-    // Status en kleur naar Blynk sturen:
     Blynk.setProperty(V2, "color", "#00FF00");
+    Blynk.virtualWrite(V2, 255);
+  } else {
+    analogWrite(RED_PIN, 255);
+    analogWrite(GREEN_PIN, 0);
+    analogWrite(BLUE_PIN, 0);
+
+  
+    Blynk.setProperty(V2, "color", "#FF0000");
     Blynk.virtualWrite(V2, 255);
   }
 }
