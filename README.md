@@ -8,5 +8,5 @@ foto's:
 ![20250228_151915](https://github.com/user-attachments/assets/3c42a362-5063-4fa7-9fe6-81168ad55bdf)
 
 
-Turorial:
+Uitleg:
 https://youtube.com/shorts/9aRMQvPz4ns
